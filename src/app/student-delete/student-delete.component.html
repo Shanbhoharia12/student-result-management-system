@@ -1,0 +1,27 @@
+<p>student-delete works!</p>
+<div class="container">
+    <h1>Delete Student</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Email</th>
+          <th>Marks</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.rollno }}</td>
+          <td>{{ student.email }}</td>
+          <td>{{ student.marks }}</td>
+          <td><button (click)="deleteStudent(student)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

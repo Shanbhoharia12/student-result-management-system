@@ -1,0 +1,30 @@
+<!-- <app-student-login> </app-student-login>
+
+
+
+<div class="container">
+    <h1>Student Result</h1>
+    <div *ngIf="results.length > 0; else noResults">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of results">
+            <td>{{ result.studentName }}</td>
+            <td>{{ result.subject }}</td>
+            <td>{{ result.result }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ng-template #noResults>
+      <p>No results to display.</p>
+    </ng-template>
+  </div>
+   -->
+<router-outlet></router-outlet>

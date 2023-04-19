@@ -1,0 +1,45 @@
+<p>student-add works!</p>
+<div class="container">
+    <h2>Add New Student</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" formControlName="name" id="name">
+        <!-- <div *ngIf="addForm.get('name').invalid && (addForm.get('name').dirty || addForm.get('name').touched)"
+             class="alert alert-danger">
+          <div *ngIf="addForm.get('name').errors.required">Name is required</div>
+        </div> -->
+      </div>
+  
+      <div class="form-group">
+        <label for="rollno">Roll No:</label>
+        <input type="text" class="form-control" formControlName="rollno" id="rollno">
+        <!-- <div *ngIf="addForm.get('rollno').invalid && (addForm.get('rollno').dirty || addForm.get('rollno').touched)"
+             class="alert alert-danger">
+          <div *ngIf="addForm.get('rollno').errors.required">Roll No is required</div>
+        </div> -->
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" formControlName="email" id="email">
+        <!-- <div *ngIf="addForm.get('email').invalid && (addForm.get('email').dirty || addForm.get('email').touched)"
+             class="alert alert-danger">
+          <div *ngIf="addForm.get('email').errors.required">Email is required</div>
+          <div *ngIf="addForm.get('email').errors.email">Invalid email format</div>
+        </div> -->
+      </div>
+  
+      <div class="form-group">
+        <label for="marks">Marks:</label>
+        <input type="text" class="form-control" formControlName="marks" id="marks">
+        <!-- <div *ngIf="addForm.get('marks').invalid && (addForm.get('marks').dirty || addForm.get('marks').touched)"
+             class="alert alert-danger">
+          <div *ngIf="addForm.get('marks').errors.required">Marks is required</div>
+        </div> -->
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="addForm.invalid">Submit</button>
+    </form>
+  </div>
+  
